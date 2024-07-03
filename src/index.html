@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-4">
+    
+    <header class="bg-white p-4 rounded-lg shadow-lg mb-4">
+        <h1 class="text-3xl font-bold">Weather Dashboard</h1>
+      </header>
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+    <!-- Sidebar (input, submit button and current location) -->
+    <div class="bg-white p-4 rounded-lg shadow-lg lg:col-span-1">
+      <h2 class="text-2xl font-bold mb-4">Enter City</h2>
+      <input  id="inputbox" type="text" placeholder="City Name" class="w-full mb-4 p-2 border rounded-md" >
+      <button id="submitbutton" class="w-full bg-blue-500 text-white py-2 rounded-md mb-4">Submit</button>
+      <button id="current-location-btn" class="w-full bg-green-500 text-white py-2 rounded-md" >Use Current Location</button>
+    </div>
+
+    <!-- Main Content Area-->
+    <div class="lg:col-span-3 space-y-4">
+      <!-- City Weather display -->
+      <div id="weather" class="bg-white p-4 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-2">City Weather</h2>
+        <p class="text-lg">Enter city name to see the current weather.</p>
+      </div>
+      <!-- 5 Day Forecast display -->
+      <div id="forecast" class="bg-white p-4 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-2">5 Day Forecast</h2>
+        <p class="text-lg">Enter city name to see forecast</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"> </script>
+</body>
+</html>
